@@ -38,7 +38,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </p>
 <p>
 お城の水攻めは備中高松城の戦い（1582年）、太田城の戦い（1585年）、忍城の戦い（1590年）が「日本三大水攻め」とされているそうです、三大水攻めの中で一番初めの水攻め「備中高松城の戦い（1582年）」を調べてみた。<br>
-備中高松城（以下高松城とします）は現在の岡山県、岡山と倉敷の中間ぐらいの山沿いに位置していた。
+備中高松城は現在の岡山県、岡山と倉敷の中間ぐらいの山沿いに位置していた。
 </p>
 <br>
 
@@ -51,17 +51,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="w3-container">
 
 <p>
-ウィキペディアによると備中高松城の戦い（1582年）は織田信長の命を受けた羽柴秀吉（後の豊臣秀吉）が中国地方の毛利氏を侵攻する際に起こした戦いだった。
-高松城は当時数少なかった低湿地を利用した平城（沼城、ぬまじろ）であり騎馬や鉄砲にも強く、秀吉の城攻めは持久戦となったらしい。
+ウィキペディアによると備中高松城の戦い（1582年）は織田信長の命を受けた秀吉が毛利氏を侵攻する際に起こした戦いだった。
+高松城は当時数少なかった低湿地を利用した平城（沼城、ぬまじろ）で騎馬や鉄砲にも強く、秀吉の城攻めは持久戦となったらしい。
 </p>
 <p>
-高松城にズームインしてみる。  
+高松城にズームインしてみる。
 </p>
 
 </div>
 
 <div class="w3-container w3-center">
 <img src="./images/takamatsuJyo02.png" alt="高松城Googleマップ" class="w3-center" style="width:90%;max-width:320px">
+</div>
+
+<div class="w3-container">
+  <p>
+    国土地理院の高精度標高データで足守川から高松城までの標高をggplotのgeom_contourで可視化する。
+    https://www.gsi.go.jp/kankyochiri/Laser_demimage.html
+  </p>
+</div>
+
+<div class="w3-container w3-center">
+<img src="./images/ggplotContour01.png" alt="高低差マップ" class="w3-center" style="width:90%;max-width:320px">
+</div>
+
+<div class="w3-container">
+  <p>
+ 足守川から高松城までの距離は１Km以上。<br>
+ggplotだと標高の低い部分がわかりずらい。rayshaderで影をつけて標高の低い部分の詳細を可視化する。
+  </p>
+</div>
+
+<div class="w3-container w3-center">
+<img src="./images/base_map.png" alt="rayshaderマップ" class="w3-center" style="width:90%;max-width:320px">
 </div>
 
 
